@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/shuffle-for-tailwind.png"
+    />
+    <link rel="stylesheet" href="../public/generator.css" />
+    <title>Plesus web page | practice-Project</title>
+  </head>
+  <body class="antialiased bg-slate-100 h-screen">
+    <main class="root">
+      <!-- Head section  -->
+      <section class="overflow-hidden">
+        <!-- default navbar section markup -->
+        <nav
+          class="flex items-center justify-between bg-slate-100 p-5 px-14 border-b border-gray-200 fixed w-full top-0 left-0 z-20"
+        >
+          <a href="#">
+            <img
+              class="pointer-events-none"
+              src="../assets/logo/logo-zeus-red.svg"
+              alt="logo-images"
+            />
+          </a>
+          <ul class="hidden lg:flex items-center gap-1">
+            <li class="elemand"><a href="#">About</a></li>
+            <li class="elemand"><a href="#">Company </a></li>
+            <li class="elemand"><a href="#"> Services</a></li>
+            <li class="elemand"><a href="#">Testimonials </a></li>
+            <li class="elemand">
+              <div class="btn relative">
+                <div class="animat-wrapper">
+                  <span class="animation"></span>
+                  <span class="animat-bg"></span>
+                </div>
+                <button class="hidden lg:flex">Coutact Us</button>
+              </div>
+            </li>
+          </ul>
+          <button
+            class="mobileButton lg:hidden p-3 hover:bg-gray-200 rounded-md duration-200"
+          >
+            <svg
+              class="block h-4 w-4"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </nav>
+        <!-- Mobile phone navbar section markup -->
+        <div
+          class="mobileMenu hidden duration-200 w-full h-full z-30 fixed top-0 left-0"
+        >
+          <div
+            class="backdrop fixed inset-0 bg-gray-800 opacity-25 w-full h-full z-20"
+          ></div>
+          <div class="fixed top-0 bg-slate-100 z-20 h-full">
+            <nav
+              class="flex flex-col w-[370px] h-full justify-between px-5 py-5 sticky top-0 left-0 z-10"
+            >
+              <div class="flex items-center justify-between">
+                <a href="#">
+                  <img
+                    class="pointer-events-none"
+                    src="../assets/logo/logo-zeus-yellow.svg"
+                    alt="logo-images"
+                  />
+                </a>
+                <button
+                  class="close-navbar p-2 bg-red-300 hover:bg-red-200 group rounded-full duration-200"
+                >
+                  <svg
+                    class="h-5 w-5 text-blue-body group-hover:text-blue-950 cursor-pointer hover:text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <ul class="flex gap-1 flex-col flex-1 pt-3">
+                <li class="elemand"><a href="#">About</a></li>
+                <li class="elemand"><a href="#">Company </a></li>
+                <li class="elemand"><a href="#"> Services</a></li>
+                <li class="elemand"><a href="#">Testimonials </a></li>
+              </ul>
+              <div class="flex flex-col items-center gap-3.5 pb-6">
+                <button class="btn w-full">Coutact Us</button>
+                <span class="text-sm text-gray-600"
+                  >&copy; 2023 All rights reserved.</span
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Hero section markup -->
+
+        <div class="heroSection pt-20">
+          <div class="container mx-auto px-5">
+            <div
+              class="flex items-center justify-between max-md:flex-col xl:w-9/12 xl:mx-auto max-lg:pt-8"
+            >
+              <div class="relative md:w-1/2">
+                <small class="text-sky-400 font-semibold"
+                  >What's new at shuffie</small
+                >
+                <h2
+                  class="text-[60px] leading-none py-6 font-semibold text-blue-body"
+                >
+                  Take care of your performance every day.
+                </h2>
+                <p class="text-xl text-gray-500 pb-5 leading-9">
+                  Build a well-presented brand that everyone will love. Take
+                  care to develop resources continually and integrity them with
+                  previous projects.
+                </p>
+                <div class="overflow-hidden">
+                  <button class="buttonStyle">Track your performance</button>
+                  <button
+                    class="text-blue-body border border-gray-200 p-4 px-5 rounded-md hover:text-gray-700 duration-200"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+              <div
+                class="hero-img pointer-events-none md:w-1/2 relative justify-center overflow-hidden"
+              >
+                <img
+                  class="hidden lg:inline-block lg:absolute top-0 right-0 xl:-right-8 z-10 lg:mt-36 2xl:right-8"
+                  src="../assets/icons/dots/yellow-dot-right-shield.svg"
+                  alt="hero-imgae"
+                />
+                <img
+                  class="relative max-w-[500px] m-auto"
+                  src="../assets/images/z-picture.png"
+                  alt="hero-imgae"
+                />
+                <img
+                  class="hidden lg:block lg:absolute left-9 bottom-20 z-10 2xl:left-16"
+                  src="../assets/icons/dots/blue-dot-left-bars.svg"
+                  alt="hero-imgae"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div>
+          <label class="burger" for="burger">
+            <input type="checkbox" id="burger" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div> -->
+      </section>
+      <!-- thard section  -->
+      <section class="overflow-hidden py-5">
+        <div class="container m-auto">
+          <div class="topSection w-full pt-3 relative">
+            <img
+              class="absolute top-0 left-0 hidden lg:block"
+              src="../assets/icons/dots/blue-dot-left-bars.svg"
+              alt="dots-button"
+            />
+            <div class="content-info text-center lg:w-[800px] p-4 m-auto">
+              <small class="text-sky-400 font-semibold"
+                >What's new at Shuffle</small
+              >
+              <h2 class="text-5xl py-7 text-center text-blue-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </h2>
+              <p class="text-2xl text-center text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis incidunt vitae numquam illo mollitia temporibus.
+              </p>
+            </div>
+            <img
+              class="absolute bottom-0 right-0 hidden lg:block"
+              src="../assets/icons/dots/yellow-dot-right-shield.svg"
+              alt="dots-button"
+            />
+          </div>
+          <div
+            class="projectSection pt-20 lg:w-3/4 lg:m-auto flex flex-col gap-4 items-center justify-center"
+          >
+            <div class="ps-card">
+              <div class="card">
+                <div class="cardImage rounded-md relative overflow-hidden">
+                  <img
+                    class="w-full"
+                    src="../assets/images/project/photo-1.avif"
+                    alt="Project"
+                  />
+                  <span
+                    class="absolute top-0 right-0 m-2 bg-gray-300 bg-opacity-40 text-white px-4 py-1 text-xs font-semibold rounded-md uppercase"
+                    >developers</span
+                  >
+                </div>
+                <p class="text-xs text-gray-500 py-5">10 jun 2020 19:40</p>
+                <div class="cardInfo">
+                  <h3 class="text-[2rem] leading-none text-blue-body">
+                    Lorem ipsum dolor sit amet consectutar
+                  </h3>
+                  <p class="py-3 text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque massa nibh, pulvinar vitae aliquet nec,
+                    accumsan aliquet orci.
+                  </p>
+                  <a
+                    href="#"
+                    class="underline text-red-500 font-semibold hover:no-underline duration-200"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="cardImage rounded-md relative overflow-hidden">
+                  <img
+                    class="w-full"
+                    src="../assets/images/project/photo-2.avif"
+                    alt="Project"
+                  />
+                  <span
+                    class="absolute top-0 right-0 m-2 bg-gray-300 bg-opacity-40 text-white px-4 py-1 text-xs font-semibold rounded-md uppercase"
+                    >developers</span
+                  >
+                </div>
+                <p class="text-xs text-gray-500 py-5">10 jun 2020 19:40</p>
+                <div class="cardInfo">
+                  <h3 class="text-[2rem] leading-none text-blue-body">
+                    Lorem ipsum dolor sit amet consectutar
+                  </h3>
+                  <p class="py-3 text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque massa nibh, pulvinar vitae aliquet nec,
+                    accumsan aliquet orci.
+                  </p>
+                  <a
+                    href="#"
+                    class="underline text-red-500 font-semibold hover:no-underline duration-200"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="cardImage rounded-md relative overflow-hidden">
+                  <img
+                    class="w-full"
+                    src="../assets/images/project/photo-3.avif"
+                    alt="Project"
+                  />
+                  <span
+                    class="absolute top-0 right-0 m-2 bg-gray-300 bg-opacity-40 text-white px-4 py-1 text-xs font-semibold rounded-md uppercase"
+                    >developers</span
+                  >
+                </div>
+                <p class="text-xs text-gray-500 py-5">10 jun 2020 19:40</p>
+                <div class="cardInfo">
+                  <h3 class="text-[2rem] leading-none text-blue-body">
+                    Lorem ipsum dolor sit amet consectutar
+                  </h3>
+                  <p class="py-3 text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque massa nibh, pulvinar vitae aliquet nec,
+                    accumsan aliquet orci.
+                  </p>
+                  <a
+                    href="#"
+                    class="underline text-red-500 font-semibold hover:no-underline duration-200"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="cardImage rounded-md relative overflow-hidden">
+                  <img
+                    class="w-full h-[80%]"
+                    src="../assets/images/project/photo-4.avif"
+                    alt="Project"
+                  />
+                  <span
+                    class="absolute top-0 right-0 m-2 bg-gray-300 bg-opacity-40 text-white px-4 py-1 text-xs font-semibold rounded-md uppercase"
+                    >developers</span
+                  >
+                </div>
+                <p class="text-xs text-gray-500 py-5">10 jun 2020 19:40</p>
+                <div class="cardInfo">
+                  <h3 class="text-[2rem] leading-none text-blue-body">
+                    Lorem ipsum dolor sit amet consectutar
+                  </h3>
+                  <p class="py-3 text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque massa nibh, pulvinar vitae aliquet nec,
+                    accumsan aliquet orci.
+                  </p>
+                  <a
+                    href="#"
+                    class="underline text-red-500 font-semibold hover:no-underline duration-200"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="cardImage rounded-md relative overflow-hidden">
+                  <img
+                    class="w-full"
+                    src="../assets/images/project/photo-2.avif"
+                    alt="Project"
+                  />
+                  <span
+                    class="absolute top-0 right-0 m-2 bg-gray-300 bg-opacity-40 text-white px-4 py-1 text-xs font-semibold rounded-md uppercase"
+                    >developers</span
+                  >
+                </div>
+                <p class="text-xs text-gray-500 py-5">10 jun 2020 19:40</p>
+                <div class="cardInfo">
+                  <h3 class="text-[2rem] leading-none text-blue-body">
+                    Lorem ipsum dolor sit amet consectutar
+                  </h3>
+                  <p class="py-3 text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque massa nibh, pulvinar vitae aliquet nec,
+                    accumsan aliquet orci.
+                  </p>
+                  <a
+                    href="#"
+                    class="underline text-red-500 font-semibold hover:no-underline duration-200"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="cardImage rounded-md relative overflow-hidden">
+                  <img
+                    class="w-full"
+                    src="../assets/images/project/photo-1.avif"
+                    alt="Project"
+                  />
+                  <span
+                    class="absolute top-0 right-0 m-2 bg-gray-300 bg-opacity-40 text-white px-4 py-1 text-xs font-semibold rounded-md uppercase"
+                    >developers</span
+                  >
+                </div>
+                <p class="text-xs text-gray-500 py-5">10 jun 2020 19:40</p>
+                <div class="cardInfo">
+                  <h3 class="text-[2rem] leading-none text-blue-body">
+                    Lorem ipsum dolor sit amet consectutar
+                  </h3>
+                  <p class="py-3 text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque massa nibh, pulvinar vitae aliquet nec,
+                    accumsan aliquet orci.
+                  </p>
+                  <a
+                    href="#"
+                    class="underline text-red-500 font-semibold hover:no-underline duration-200"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- forth section  -->
+      <section class="contact-info">
+        <div class="infoWrapper container m-auto py-10">
+          <div class="topSection w-full pt-3 relative">
+            <div class="content-info text-center lg:w-[800px] p-4 m-auto">
+              <small class="text-sky-400 font-semibold"
+                >What's new at Shuffle</small
+              >
+              <h2 class="text-5xl py-7 text-center text-blue-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </h2>
+              <p class="text-2xl text-center text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis incidunt vitae numquam illo mollitia temporibus.
+              </p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="card">
+              <h2
+                class="capitalize text-2xl font-semibold text-blue-body pb-2.5"
+              >
+                Address
+              </h2>
+              <p class="text-gray-400">
+                1686 Geraldine Lane <br />
+                New York, NY 10013
+              </p>
+            </div>
+            <div class="card">
+              <h2
+                class="capitalize text-2xl font-semibold text-blue-body pb-2.5"
+              >
+                contact
+              </h2>
+              <p class="text-gray-400">
+                hello@wireframes.org <br />
+                +7-843-672-431
+              </p>
+            </div>
+            <div class="card">
+              <h2
+                class="capitalize text-2xl font-semibold text-blue-body pb-2.5"
+              >
+                socials
+              </h2>
+              <div
+                class="social-icons flex items-center justify-center gap-3 pt-3"
+              >
+                <a href="#"
+                  ><img src="../assets/socials/facebook.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/socials/github.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/socials/instagram.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/socials/linkedin.svg" alt="icon"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/socials/twitter.svg " alt="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section -->
+      <footer class="relative">
+        <div
+          class="footerMenu mx-10 py-9 flex gap-4 items-center lg:flex-row lg:justify-between flex-col border-b border-gray-300"
+        >
+          <a href="#">
+            <img
+              class="pointer-events-none"
+              src="../assets/logo/logo-zeus-red.svg"
+              alt="logo-images"
+            />
+          </a>
+          <ul class="flex items-center gap-2">
+            <li class="elemand hover:!bg-transparent"><a href="#">About</a></li>
+            <li class="elemand hover:!bg-transparent">
+              <a href="#">Company </a>
+            </li>
+            <li class="elemand hover:!bg-transparent">
+              <a href="#"> Services</a>
+            </li>
+            <li class="elemand hover:!bg-transparent">
+              <a href="#">Testimonials </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="copyright py-10 flex items-center justify-between px-10 max-md:flex-col max-md:gap-4"
+        >
+          <p>All rights reserved &copy; Zeus Corporation 2023</p>
+          <div class="socials">
+            <div class="social-icons flex items-center justify-center gap-3">
+              <a href="#"
+                ><img src="../assets/socials/facebook.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="../assets/socials/instagram.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="../assets/socials/linkedin.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="../assets/socials/twitter.svg " alt="icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>

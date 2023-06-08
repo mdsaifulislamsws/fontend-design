@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.host": "localhost",
+  "tailwind-fold.autoFold": true,
+  "editor.hideCursorInOverviewRuler": false,
+  "editor.minimap.autohide": false,
+  "scm.providerCountBadge": "hidden",
+  "files.autoGuessEncoding": false
+}

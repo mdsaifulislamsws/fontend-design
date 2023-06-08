@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .root {
+    @apply w-full h-full overflow-x-hidden;
+  }
+  .animat-wrapper {
+    @apply flex items-center justify-center absolute top-[-1px] right-[-1px];
+  }
+  .animation {
+    @apply animate-ping absolute inline-flex h-3 w-3 rounded-full bg-red-400 opacity-75;
+  }
+  .animat-bg {
+    @apply relative inline-flex rounded-full h-3 w-3 bg-red-500;
+  }
+  .buttonStyle {
+    @apply bg-[#ff4564] text-white p-4 px-5 rounded-md hover:bg-opacity-75 duration-200;
+  }
+  .btn {
+    @apply px-6 py-3 hover:bg-red-300 hover:bg-opacity-40 bg-opacity-20 bg-red-300 rounded-md text-red-500  font-semibold text-sm;
+  }
+  li.elemand {
+    @apply hover:bg-slate-200 lg:hover:bg-[unset] rounded-md duration-200;
+  }
+  li.elemand a {
+    @apply px-4 py-2 w-full inline-block text-blue-body;
+  }
+  .ps-card {
+    @apply grid items-center gap-4 grid-flow-col grid-cols-3 max-md:block xl:grid-cols-3 xl:grid-rows-2 max-lg:grid-cols-2 lg:grid-cols-2 grid-rows-3;
+  }
+  .card {
+    @apply lg:flex-1 max-w-[400px] lg:max-w-[350px] mb-3 lg:mb-0 last:mb-0 border border-gray-300 p-5 rounded-md;
+  }
+  .cardImage {
+    @apply w-full h-[200px]  duration-200;
+  }
+  .cardImage img {
+    @apply h-full  hover:scale-105 duration-300;
+  }
+  .contact-card {
+    @apply justify-center py-8 items-center gap-4 lg:flex-row text-center flex-col flex;
+  }
+  .contact-card .card {
+    @apply w-full h-[150px] m-0;
+  }
+  .social-icons a {
+    @apply w-10 h-10 p-3 bg-gray-300 rounded-full;
+  }
+  .social-icons a img {
+    @apply w-full h-full;
+  }
+  /*==========================================*/
+
+  .burger {
+    @apply relative w-10 h-[30px] cursor-pointer block;
+    background: transparent;
+  }
+  .burger input {
+    @apply hidden;
+  }
+  .burger span {
+    @apply block absolute h-1 w-full opacity-100 rotate-0 transition-[0.25s] duration-[ease-in-out] rounded-[9px] left-0;
+    background: black;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+  }
+  .burger span:nth-of-type(1) {
+    @apply origin-[left_center] top-0;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+  }
+  .burger span:nth-of-type(2) {
+    @apply -translate-y-2/4 origin-[left_center] top-2/4;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+  }
+  .burger span:nth-of-type(3) {
+    @apply origin-[left_center] -translate-y-full top-full;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+  }
+  .burger input:checked ~ span:nth-of-type(1) {
+    @apply rotate-45 left-[5px] top-0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+  }
+  .burger input:checked ~ span:nth-of-type(2) {
+    @apply w-[0%] opacity-0;
+  }
+  .burger input:checked ~ span:nth-of-type(3) {
+    @apply -rotate-45 left-[5px] top-7;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+  }
+}
